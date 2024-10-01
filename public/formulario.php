@@ -12,8 +12,9 @@
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" required>
 
-        <label for="montoVehiculo">Monto del Vehículo (USD):</label>
-        <input type="number" name="montoVehiculo" required>
+        <label for="montoVehiculo">Monto del Vehículo (SOLES):</label>
+<input type="number" name="montoVehiculo" step="0.01" required>
+
 
         <label for="cuotaInicial">% de Cuota Inicial:</label>
         <input type="number" name="cuotaInicial" step="0.01" required>

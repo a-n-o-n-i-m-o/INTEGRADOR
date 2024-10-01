@@ -1,42 +1,79 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f4f6; /* Color de fondo claro */
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2 {
-    color: #2E86C1;
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-label, input {
-    margin: 5px 0;
+h1 {
+    color: #002d72; /* Azul oscuro del BCP */
+    font-size: 2em;
+    margin: 0;
 }
 
-button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #3498DB;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-table {
+/* Estilo de resultados */
+.resultado {
+    background-color: #e9f4fb; /* Fondo azul claro */
+    border: 1px solid #cce4f7; /* Borde azul suave */
+    padding: 15px;
+    border-radius: 5px;
     margin-top: 20px;
+}
+
+/* Tabla */
+table {
     width: 100%;
     border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
+    margin-top: 20px;
+    font-size: 0.9em; /* Tamaño de fuente más pequeño para mejor legibilidad */
+    border: 2px solid #002d72; /* Borde azul oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que los bordes redondeados se mantengan */
 }
 
 th, td {
-    padding: 8px;
+    padding: 12px;
     text-align: left;
+    border: 1px solid #cce4f7; /* Borde azul suave */
+}
+
+th {
+    background-color: #002d72; /* Azul oscuro del BCP */
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color alternado para las filas */
+}
+
+tbody tr:hover {
+    background-color: #e1f5fe; /* Color de hover azul claro */
+}
+
+/* Totales */
+.totales {
+    margin-top: 20px;
+    font-size: 1.1em;
+    border-top: 2px solid #002d72; /* Borde superior azul oscuro */
+    padding-top: 10px;
+    color: #002d72; /* Texto en azul oscuro */
 }
